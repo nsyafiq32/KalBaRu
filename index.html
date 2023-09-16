@@ -10,15 +10,35 @@
     <header>
         <h1>Kalkulator Bangun Ruang</h1>
     </header>
-    <section class="rumusPersegi">
-        <p>Rumus Pada Persegi Yaitu :</p>
-        <div>L = s x s</div>
-        <div>K = 4 x s</div>
-        <p>Dimana :</p>
-        <div>L : Luas</div>
-        <div>K : Keliling</div>
-        <div>s : Sisi</div>
-    </section>
+    <main>
+        <section>
+            <nav>
+                <button type="button" class="btn-choice">Persegi</button>
+                <button type="button" class="btn-choice">Persegi Panjang</button>
+                <button type="button" class="btn-choice">Segitiga</button>
+            </nav>
+        </section>
+        <section id="persegi">
+            <h2>Persegi</h2>
+            <img src="assets/persegi.jpg" alt="persegi">
+            <p>Rumus pada Persegi yaitu :</p>
+            <div>L = s x s</div>
+            <div>K = 4 x s</div>
+            <p>Dimana :</p>
+            <div>L : Luas</div>
+            <div>K : Keliling</div>
+            <div>s : Sisi</div><br>
+            <div class="count">
+                <p>Input Nilai Sisi</p>
+                <input type="number" id="sisi-persegi" name="sisi-persegi" required>
+            </div>
+            <div class="btn-action">
+                <button type="submit" class="btn-submit">Luas</button>
+                <button type="submit" class="btn-submit">Keliling</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+        </section>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
