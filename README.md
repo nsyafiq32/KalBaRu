@@ -1,5 +1,5 @@
 # KalBaRu
 Kalkulator Bangun Ruang
-/n
-Kalkulator ini berfungsi untuk menghitung luas dan keliling dari bangun ruang.
+
+# Kalkulator ini berfungsi untuk menghitung luas dan keliling dari bangun ruang.
 Kalkulator ini masih dalam perkembangan.
