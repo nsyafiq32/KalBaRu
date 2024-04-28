@@ -1,9 +1,9 @@
 const navPersegi = document.querySelector("nav button:nth-child(1)");
 const navPersegiPanjang = document.querySelector("nav button:nth-child(2)");
 const navSegitiga = document.querySelector("nav button:nth-child(3)");
-const sectionPersegi = document.querySelector("section:persegi");
-const sectionPersegiPanjang = document.querySelector("section:persegi-panjang");
-const sectionSegitiga = document.querySelector("section:segitiga");
+const sectionPersegi = document.querySelector("section#persegi");
+const sectionPersegiPanjang = document.querySelector("section#persegi-panjang");
+const sectionSegitiga = document.querySelector("section#segitiga");
 
 navPersegi.addEventListener("click", () => {
     sectionPersegi.classList.add("active");
@@ -55,6 +55,22 @@ btnSubmit[2].addEventListener("click", (e) => {
 function countLuasPersegi() {
     const inputValue = document.getElementById("sisi-persegi").value;
     side1[0].innerText = inputValue;
+
+    if(!this.Helper.checkHitung(value)) {
+        const show = document.createElement("p");
+        show.classList = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+
+        show.innerText = "Input Angka Dengan Benar!"
+        this.result(nilai);
+    } else {
+        let valueInt = parseInt(value);
+        let hasil = valueInt * valueInt;
+
+        const nilai = document.createElement("p");
+        
+        nilai.innerText = `L = ${valueInt} x ${valueInt}\nL = ${hasil}`;
+        this.result(nilai);
+    }
 
     document.querySelector("section:persegi").innerText = inputValue * inputValue;
 }

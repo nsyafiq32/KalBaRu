@@ -1,10 +1,37 @@
-header {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    height: 53px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, section#persegi h2:first-of-type, section#persegi-panjang h2:first-of-type, section#segitiga h2:first-of-type{
+    align-items: center;
+    display: flex;
+    height: 100px;
     /* background-color: #46C2CB; */
     background-color: #0C356A;
     color: white;
+    justify-content: center;
+    height: 120px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header a {
+    align-items: baseline;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    flex-wrap: wrap;
+    height: 120px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
 }
 
 body {
@@ -16,15 +43,7 @@ main {
     border-radius: 5px;
     margin: 1em auto;
     max-width: 90vw;
-}
-
-section#persegi h2:first-of-type, section#persegi-panjang h2:first-of-type, section#segitiga h2:first-of-type {
-    align-items: center;
-    background-color: #0C356A;
-    color: white;
-    display: flex;
-    height: 100px;
-    justify-content: center;
+    padding: 20px 20px;
 }
 
 img {
@@ -48,11 +67,42 @@ section#persegi {
     margin: 20px auto;
 }
 
+section#persegi p, section#persegi-panjang p, section#segitiga p {
+    margin: 5px 0 5px 10px;
+}
+
+section#persegi > p:nth-of-type(2) {
+    font-weight: 650;
+    text-align: center;
+}
+
+hr {
+    margin: 10px auto;
+    width: 97%;
+}
+
+section#persegi p div {
+    margin: 10px;
+}
+
+input {
+    display: block;
+    font-size: 15px;
+    margin: 5px auto;
+    padding: 5px;
+    width: 90%;
+}
+
+input:focus {
+    border-radius: 5px;
+    border: 2px ridge red;
+}
+
 .active {
     display: block !important;
 }
 
-nav .btn-choice {
+.btn-choice {
     border-radius: 5px;
     background-color: #46C2CB;
     color: white;
@@ -62,7 +112,7 @@ nav .btn-choice {
     cursor: pointer;
 }
 
-nav .btn-choice:hover {
+.btn-choice:hover {
     background-color: #333;
 }
 
